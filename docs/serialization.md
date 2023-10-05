@@ -51,7 +51,7 @@ export class User extends EntityHelper {
    export class UsersController {
      constructor(private readonly usersService: UsersService) {}
 
-     // Some code here...
+     // Some code here....
 
      @SerializeOptions({
        groups: ['admin'],

@@ -28,7 +28,8 @@ import { DataSource, DataSourceOptions } from 'typeorm';
 import { AllConfigType } from './config/config.type';
 import { SessionModule } from './session/session.module';
 import { MailerModule } from './mailer/mailer.module';
-
+import { CollectionModule } from './collections/collection.module';
+import { NftItemModule } from './nft-items/nft.item.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -87,6 +88,8 @@ import { MailerModule } from './mailer/mailer.module';
     MailModule,
     MailerModule,
     HomeModule,
+    CollectionModule,
+    NftItemModule,
   ],
 })
 export class AppModule {}
